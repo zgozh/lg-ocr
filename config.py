@@ -138,6 +138,7 @@ def build_predict_flags() -> dict:
     """构建 pipeline.predict() 调用使用的开关，统一从配置文件 pipeline 段读取。"""
     pipeline_config = _CONFIG_DATA["pipeline"]
     return {
+        # 表格方向分类当前不通过配置暴露，固定关闭
         "use_table_orientation_classify": False,
         "use_layout_detection": pipeline_config["use_layout_detection"],
         "use_doc_orientation_classify": pipeline_config["use_doc_orientation_classify"],
