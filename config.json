@@ -1,0 +1,48 @@
+{
+  "ollama": {
+    "host": "http://127.0.0.1:11434",
+    "model": "qwen2.5:7b",
+    "max_retries": 3,
+    "retry_delay_seconds": 1.0
+  },
+  "device": "gpu:0",
+  "models": {
+    "layout_detection": {
+      "name": "PP-DocLayout-L",
+      "path": "./official_models/PP-DocLayout-L"
+    },
+    "table_classification": {
+      "name": "PP-LCNet_x1_0_table_cls",
+      "path": "./official_models/PP-LCNet_x1_0_table_cls"
+    },
+    "wired_table_structure_recognition": {
+      "name": "SLANeXt_wired",
+      "path": "./official_models/SLANeXt_wired"
+    },
+    "wireless_table_structure_recognition": {
+      "name": "SLANeXt_wireless",
+      "path": "./official_models/SLANeXt_wireless"
+    },
+    "wired_table_cells_detection": {
+      "name": "RT-DETR-L_wired_table_cell_det",
+      "path": "./official_models/RT-DETR-L_wired_table_cell_det"
+    },
+    "wireless_table_cells_detection": {
+      "name": "RT-DETR-L_wireless_table_cell_det",
+      "path": "./official_models/RT-DETR-L_wireless_table_cell_det"
+    },
+    "text_recognition": {
+      "name": "PP-OCRv5_server_rec",
+      "path": "./official_models/PP-OCRv5_server_rec"
+    },
+    "text_detection": {
+      "name": "PP-OCRv5_server_det",
+      "path": "./official_models/PP-OCRv5_server_det"
+    }
+  },
+  "pipeline": {
+    "use_layout_detection": true,
+    "use_doc_orientation_classify": false,
+    "use_doc_unwarping": false
+  }
+}

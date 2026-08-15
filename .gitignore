@@ -1,0 +1,155 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+ocr-env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# AI 工具 / 评估工具本地状态
+.claude/
+.jbeval/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# 测试文件
+tests/tmp*/
+tests/test_output/
+*.log
+
+# OCR 模型文件（体积大，不提交到 Git）
+models/
+infer/
+official_models/
+*.pdparams
+*.pdiparams
+*.pdmodel
+*.pdopt
+
+# 训练相关文件
+training/ppocr/
+training/tools/
+trained_models/
+datasets/
+pretrained_models/*.pdparams
+pretrained_models/*/*.pdparams
+*.yml
+*.yaml
+vdl_log/
+output/
+
+# 处理结果文件
+result/
+output.xlsx
+*.xlsx
+*.xls
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# 配置文件（可能包含敏感信息）
+# 注意：如果需要提交示例配置，使用 config.example.json
+# config.json
+
+# 用户数据
+data/
+images/
+test_images/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.pdf
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志文件
+*.log
+logs/
+
+# 打包文件
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# 文档生成
+docs/_build/
+site/
+
+# 开发过程文档目录（不入库）
+文档/
+
+# Coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# 其他
+*.swp
+*~
+.project
+.pydevproject
+.settings/
